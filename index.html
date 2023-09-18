@@ -1,1 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-sccalable=0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <title>Film by Roy</title>
+    <!-- Add this in the <head> section of your HTML -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
+  </style>
+
+
+<style>
+   
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #17202A; /* Light mode background color */
+    color: lightyellow; 
+    transition: background-color 1.5s, color .75s;
+}
+
+.dark-mode {
+    background-color: #ECF0F1; 
+    color: #17202A; 
+    
+    
+}
+
+header {
+    background-color: transparent;
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-family: 'Cinzel', serif;
+    font-size:22px;
+}
+
+main {
+    padding: 20px;
+}
+
+.reels-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+
+.reel {
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 1rem;
+    border: 2px solid gold;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    
+}
+
+.text{
+    text-align: justify;
+    justify-content:space-between;
+}
+/* styles.css */
+
+/* Your existing CSS styles */
+
+/* Media query for screens with a maximum width of 600px (adjust as needed) */
+@media (max-width: 600px) {
+    .reels-container {
+        flex-direction: column; /* Stack embedded views in a column on mobile */
+    }
+
+    .reel {
+        width: 100%; /* Make each embedded view take full width on mobile */
+    }
+    
+
+    
+}
+
+
+
+
+</style>
+
+
+
+
+
+<script>
+    // script.js
+$(document).ready(function () {
+    $("#toggleMode").click(function () {
+        $("body").toggleClass("dark-mode");
+    });
+});
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+    <header>
+        <h1>Explore Reels!</h1><hr style="margin-left: 50px; margin-right:50px;">
+    </header>
+
+    
+     <i id="toggleMode" class="fa-solid fa-sun fa-spin" style="font-size: 21px;position: absolute; "></i>
+        
+  
+    
+
+    <main>
+        <div class="reels-container">
+            <div class="reel">
+                <iframe src="https://www.instagram.com/reel/Cwx9G1Pv6RZ/embed/" frameborder="0"  scrolling="no"></iframe>
+            </div>
+            <div class="reel">
+                <iframe src="https://www.instagram.com/reel/CwZ0EVVLoGD/embed/" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div class="reel">
+                <iframe src="https://www.instagram.com/reel/CuO_LZAL-bP/embed/" frameborder="0" scrolling="no"></iframe>
+            </div>
+
+
+            <div class="reel">
+                <iframe src="https://www.instagram.com/reel/Ct37x-XA7GJ/embed/" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <!-- Add more reels here -->
+        </div>
+
+
+
+        <div class="reels-container">
+            <p class="text">Are you ready to embark on a visual journey that blends the art of video shooting, expert editing, and the pulse of the current social media trend? Dive into my reels and be prepared to be wowed.
+My passion for video creation is more than just a hobby—it's a way of life. Every frame I shoot, every edit I meticulously craft, is a testament to my dedication and love for this art form. I pour my heart and soul into every reel, creating content that resonates with the latest social media trends and captivates audiences worldwide.
+Join me on this exhilarating ride, where we explore exciting destinations, share heartwarming moments, and discover the power of storytelling through videos. Give me a thumbs up, share my reels, and let's ride the wave of creativity together. Together, we can turn moments into memories, and reels into masterpieces. 
+            </p>
+        </div>
+    </main>
+</body>
+</html>
