@@ -15,6 +15,9 @@
     @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
   </style>
 
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+  </style>
 
 <style>
    
@@ -24,7 +27,8 @@ body {
     padding: 0;
     background-color: #17202A; /* Light mode background color */
     color: lightyellow; 
-    transition: background-color 1.5s, color .75s;
+    transition: background-color 1s, color .5s;
+    font-family: 'Raleway', sans-serif;
 }
 
 .dark-mode {
@@ -57,14 +61,20 @@ main {
     gap: 20px;
 }
 
-
+i {
+cursor: pointer;
+}
 
 .reel {
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     overflow: hidden;
     border-radius: 1rem;
-    border: 2px solid gold;
+    border: 1.5px solid gold;
+}
+
+.reel:hover{
+    opacity: .75;
 }
 
 iframe {
@@ -72,6 +82,9 @@ iframe {
     height: 100%;
     border: none;
     
+}
+.texaria{
+    padding: 3rem;;
 }
 
 .text{
@@ -130,10 +143,13 @@ $(document).ready(function () {
 <body>
     <header>
         <h1>Explore Reels!</h1><hr style="margin-left: 50px; margin-right:50px;">
+        <br>
+        <i id="toggleMode" class="fa-solid fa-sun fa-spin" style="font-size: 21px;position: absolute; "></i>
+        <br>
     </header>
 
     
-     <i id="toggleMode" class="fa-solid fa-sun fa-spin" style="font-size: 21px;position: absolute; "></i>
+     
         
   
     
@@ -154,15 +170,45 @@ $(document).ready(function () {
             <div class="reel">
                 <iframe src="https://www.instagram.com/reel/Ct37x-XA7GJ/embed/" frameborder="0" scrolling="no"></iframe>
             </div>
-            <!-- Add more reels here -->
+            
+            <div class="reel">
+                <iframe src="https://www.instagram.com/reel/CthRkktMfnb/embed/" frameborder="0" scrolling="no"></iframe>
+            </div>
+
+            <div class="reel">
+                <iframe src="https://www.instagram.com/reel/CtT5LjFtiFQ/embed/" frameborder="0" scrolling="no"></iframe>
+            </div>
+
+            <div class="reel">
+                <iframe src="https://www.instagram.com/reel/CtNnMhsuEOV/embed/" frameborder="0" scrolling="no"></iframe>
+            </div>
+
+            <div class="reel">
+                <iframe src="https://www.instagram.com/reel/CtG6T6yNODA/embed/" frameborder="0" scrolling="no"></iframe>
+            </div>
+
+            <div class="reel">
+                <iframe src="https://www.instagram.com/reel/CtBf6H6NEng/embed/" frameborder="0" scrolling="no"></iframe>
+            </div>
+
+            <div class="reel">
+                <iframe src="https://www.instagram.com/reel/Cqidk-LD45x/embed/" frameborder="0" scrolling="no"></iframe>
+            </div>
+
+            <div class="reel">
+                <iframe src="https://www.instagram.com/reel/CnJ4QKbDE2N/embed/" frameborder="0" scrolling="no"></iframe>
+            </div>
+
+            <div class="reel">
+                <iframe src="https://www.instagram.com/reel/ClLAN27Dx37/embed/" frameborder="0" scrolling="no"></iframe>
+            </div>
         </div>
 
+        <br>
+        <hr style="margin-left: 50px; margin-right:50px;">
 
-
-        <div class="reels-container">
-            <p class="text">Are you ready to embark on a visual journey that blends the art of video shooting, expert editing, and the pulse of the current social media trend? Dive into my reels and be prepared to be wowed.
-My passion for video creation is more than just a hobby—it's a way of life. Every frame I shoot, every edit I meticulously craft, is a testament to my dedication and love for this art form. I pour my heart and soul into every reel, creating content that resonates with the latest social media trends and captivates audiences worldwide.
-Join me on this exhilarating ride, where we explore exciting destinations, share heartwarming moments, and discover the power of storytelling through videos. Give me a thumbs up, share my reels, and let's ride the wave of creativity together. Together, we can turn moments into memories, and reels into masterpieces. 
+        <div class="textaria">
+            <p class="text">Are you ready to embark on a visual journey that blends the art of video shooting, expert editing, and the pulse of the current social media trend? Dive into my reels and be prepared to be wowed. My passion for video creation is more than just a hobby—it's a way of life. Every frame I shoot, every edit I meticulously craft, is a testament to my dedication and love for this art form. I pour my heart and soul into every reel, creating content that resonates with the latest social media trends and captivates audiences worldwide. Join me on this exhilarating ride, where we explore exciting destinations, share heartwarming moments, and discover the power of storytelling through videos. Give me a thumbs up, share my reels, and let's ride the wave of creativity together. Together, we can turn moments into memories, and reels into masterpieces. 
             </p>
         </div>
     </main>
