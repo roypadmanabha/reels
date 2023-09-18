@@ -21,6 +21,11 @@
 
 <style>
    
+*::selection{
+    display: none;
+}
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -63,14 +68,14 @@ main {
 
 i {
 cursor: pointer;
-text-decoration:none;
+text-decoration: none;
 }
 
 .reel {
     width: 300px;
     height: 300px;
     overflow: hidden;
-    border-radius: 1rem;
+    border-radius: 1.5rem;
     border: 1.5px solid gold;
 }
 
@@ -81,16 +86,12 @@ text-decoration:none;
 iframe {
     width: 100%;
     height: 100%;
-    border: none;
-    
-}
-.texaria{
-    padding: 3rem;;
 }
 
 .text{
+    margin-left: 50px; 
+    margin-right:50px;
     text-align: justify;
-    justify-content:space-between;
 }
 /* styles.css */
 
@@ -105,7 +106,10 @@ iframe {
     .reel {
         width: 100%; /* Make each embedded view take full width on mobile */
     }
-    
+    .text {
+        margin-left: 30px; /* Reduce the left margin */
+        margin-right:30px; /* Reduce the right margin */
+    }
 
     
 }
@@ -144,9 +148,9 @@ $(document).ready(function () {
 <body>
     <header>
         <h1>Explore Reels!</h1><hr style="margin-left: 50px; margin-right:50px;">
-        <br>
+        <br><br>
         <i id="toggleMode" class="fa-solid fa-sun fa-spin" style="font-size: 21px;position: absolute; "></i>
-        <br>
+        <br><br>
     </header>
 
     
@@ -205,13 +209,31 @@ $(document).ready(function () {
             </div>
         </div>
 
-        <br>
+        <br><br>
         <hr style="margin-left: 50px; margin-right:50px;">
-
+        
         <div class="textaria">
-            <p class="text">Are you ready to embark on a visual journey that blends the art of video shooting, expert editing, and the pulse of the current social media trend? Dive into my reels and be prepared to be wowed. My passion for video creation is more than just a hobby—it's a way of life. Every frame I shoot, every edit I meticulously craft, is a testament to my dedication and love for this art form. I pour my heart and soul into every reel, creating content that resonates with the latest social media trends and captivates audiences worldwide. Join me on this exhilarating ride, where we explore exciting destinations, share heartwarming moments, and discover the power of storytelling through videos. Give me a thumbs up, share my reels, and let's ride the wave of creativity together. Together, we can turn moments into memories, and reels into masterpieces. 
+            <p  class="text">Are you ready to embark on a visual journey that blends the art of video shooting, expert editing, and the pulse of the current social media trend? Dive into my reels and be prepared to be wowed. My passion for video creation is more than just a hobby—it's a way of life. Every frame I shoot, every edit I meticulously craft, is a testament to my dedication and love for this art form. I pour my heart and soul into every reel, creating content that resonates with the latest social media trends and captivates audiences worldwide. Join me on this exhilarating ride, where we explore exciting destinations, share heartwarming moments, and discover the power of storytelling through videos. Give me a thumbs up, share my reels, and let's ride the wave of creativity together. Together, we can turn moments into memories, and reels into masterpieces. 
             </p>
         </div>
+
+
+        <hr style="margin-left: 50px; margin-right:50px;">
+        <br><br>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
     </main>
 </body>
 </html>
