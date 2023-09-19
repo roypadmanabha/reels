@@ -16,7 +16,7 @@
   </style>
 
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
   </style>
 
 <style>
@@ -25,6 +25,9 @@
     display: none;
 }
 
+*{
+    overflow-x: hidden;
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -33,7 +36,7 @@ body {
     background-color: #17202A; /* Light mode background color */
     color: lightyellow; 
     transition: background-color 1s, color .5s;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .dark-mode {
@@ -57,6 +60,7 @@ header h1 {
 
 main {
     padding: 20px;
+    
 }
 
 .reels-container {
@@ -78,11 +82,11 @@ text-decoration: none;
     border-radius: 1.5rem;
     border: 1.5px solid gold;
     position: relative;
-    opacity: .8;
+    opacity: 1;
 }
 
 .reel:hover{
-    opacity:1;
+    opacity:.8;
 }
 
 iframe {
@@ -92,35 +96,64 @@ iframe {
 
 .text{
     text-align: justify;
+    
 }
 .textaria{
    
-    margin-left: 50px; /* Auto margin on the left side */
-    margin-right: 50px; /* Auto margin on the right side */
+    margin-left: 109px; 
+    margin-right:109px; 
     text-align: justify;
 }
 
 
-
-
-
-
-
-/* Media query for screens with a maximum width of 600px (adjust as needed) */
 @media (max-width: 600px) {
     .reels-container {
-        flex-direction: column; /* Stack embedded views in a column on mobile */
+        flex-direction: column; 
     }
 
     .reel {
-        width: 100%; /* Make each embedded view take full width on mobile */
+        width: 100%; 
     }
     .textaria{
     margin-left: 0px; margin-right:0px;
+    }
+   
 }
 
-    
+
+.center-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
 }
+
+
+@media (max-width: 600px) {
+    .center-img {
+        height: auto; 
+    }
+}
+/* CSS to center-align the icons and add space between them */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Add a 2px margin between the icons */
+.footer a {
+    margin: 0 2px;
+}
+.footer i {
+    color: grey;
+}
+.footer i:hover {
+    opacity: 0.7;
+}
+
+
+
 
 
 
@@ -142,14 +175,7 @@ $(document).ready(function () {
 </script>
 
 
-
-
-
-
-
-
-
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
 
 
 </head>
@@ -158,19 +184,24 @@ $(document).ready(function () {
    
 
     <header>
-        <h1>Explore</h1><hr style="margin-left: 50px; margin-right:50px;">
+        <br>
+        <h1>eXPLORe</h1>
         <br><br>
         <i id="toggleMode" class="fa-solid fa-sun fa-spin" style="font-size: 21px;position: absolute; "></i>
         <br><br>
     </header>
 
     
-     
-        
+    <main>
+
+    <div class="textaria">
+        <hr>
+        <p  class="text">Are you ready to embark on a visual journey that blends the art of video shooting, expert editing, and the pulse of the current social media trend? Dive into my reels and be prepared to be wowed. My passion for video creation is more than just a hobby—it's a way of life. Every frame I shoot, every edit I meticulously craft, is a testament to my dedication and love for this art form. I pour my heart and soul into every reel, creating content that resonates with the latest social media trends and captivates audiences worldwide. Join me on this exhilarating ride, where we explore exciting destinations, share heartwarming moments, and discover the power of storytelling through videos. Give me a thumbs up, share my reels, and let's ride the wave of creativity together. Together, we can turn moments into memories, and reels into masterpieces. 
+        </p> <hr>
+        <br><br>
+    </div>
   
     
-
-    <main>
         <div class="reels-container">
             <div class="reel">
                 <iframe src="https://www.instagram.com/reel/Cwx9G1Pv6RZ/embed/" frameborder="0"  scrolling="no"></iframe>
@@ -221,27 +252,24 @@ $(document).ready(function () {
         </div>
 
         <br><br>
-        <hr style="margin-left: 50px; margin-right:50px;">
-        
         <div class="textaria">
-            <p  class="text">Are you ready to embark on a visual journey that blends the art of video shooting, expert editing, and the pulse of the current social media trend? Dive into my reels and be prepared to be wowed. My passion for video creation is more than just a hobby—it's a way of life. Every frame I shoot, every edit I meticulously craft, is a testament to my dedication and love for this art form. I pour my heart and soul into every reel, creating content that resonates with the latest social media trends and captivates audiences worldwide. Join me on this exhilarating ride, where we explore exciting destinations, share heartwarming moments, and discover the power of storytelling through videos. Give me a thumbs up, share my reels, and let's ride the wave of creativity together. Together, we can turn moments into memories, and reels into masterpieces. 
-            </p>
+        <hr>
         </div>
-
-
-        <hr style="margin-left: 50px; margin-right:50px;">
         <br><br>
         
+        <div class="center-img">
+            <img src="filmbyroy.png" width="250px" height="250px" style="border-radius: 100%; border:2px solid gold"  draggable="false">
+        </div>
+        
+        <br>
 
-
-
-
-
-
-
-
-
-
+        <div class="footer">
+                <a class="link1" title="Facebook" href="https://facebook.com/PadmanabhaPR" target="_blank"><i class="fa fa-facebook-official hover-opacity"></i></a>
+                <a class="link2" title="Instagram" href="https://www.instagram.com/proy____/" target="_blank"><i class="fa fa-instagram hover-opacity"></i></a>
+                <a class="link3" title="Twitter" href="https://twitter.com/proy____" target="_blank"><i class="fa fa-twitter hover-opacity"></i></a>
+                <a class="link4" title="LinkedIN" href="https://www.linkedin.com/in/padmanabha-roy-65338b1b6/" target="_blank"><i class="fa fa-linkedin hover-opacity"></i></a>
+                <a class="link5" title="YouTube" href="https://www.youtube.com/channel/UCP-W10lOFoCU7UJ7Y32wphQ/videos" target="_blank"><i class="fa fa-youtube hover-opacity"></i></a>
+        </div>
 
 
 
