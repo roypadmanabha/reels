@@ -195,25 +195,25 @@ iframe {
     color: #17202A;
 }
 
-/* Scroll to Top Button Styles */
+
 .scroll-to-top {
     position: fixed;
     bottom: 20px;
     right: 20px;
     background-color: white;
     color: grey;
-    width: 32px; /* Reduced width */
-    height: 32px; /* Reduced height */
+    width: 32px; 
+    height: 32px; 
     border-radius: 50%;
     text-align: center;
-    line-height: 32px; /* Adjusted line height */
+    line-height: 32px; 
     cursor: pointer;
     display: none;
     
 }
 
 .scroll-to-top i {
-    font-size: 16px; /* Adjusted icon size */
+    font-size: 16px;
 }
 
 </style>
@@ -369,7 +369,7 @@ document.addEventListener("keydown", function (event) {
 
 
 <script>
-    // Show/hide the scroll-to-top button
+   
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
             $('#scrollToTopButton').fadeIn();
@@ -378,7 +378,7 @@ document.addEventListener("keydown", function (event) {
         }
     });
 
-    // Scroll to the top when the button is clicked
+  
     $('#scrollToTopButton').click(function () {
         $('html, body').animate({ scrollTop: 0 }, 800);
         return false;
