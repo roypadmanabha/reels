@@ -26,7 +26,7 @@ reelXtract is a dynamic web page created with HTML, CSS, JavaScript, and jQuery.
 
 ## Usage
 
-To access and explore the reelXtract page, simply visit [reelxtract.netlify.app]
+To access and explore the reelXtract page, simply visit (reelxtract.netlify.app)
 
 ## License
 
