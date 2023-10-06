@@ -4,7 +4,7 @@
 
 Welcome to **reelXtract** - Your Destination for Captivating Visual Content!
 
-![reelXtract Preview](reelxtract.png)
+![reelXtract Preview]()
 
 ## Description
 
